@@ -1,4 +1,4 @@
-package com.williansmartins.exception;
+package br.com.waiso.exception;
 
 /**
  * Componente de exceção para operações de persistência.

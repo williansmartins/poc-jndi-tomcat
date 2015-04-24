@@ -1,12 +1,17 @@
-package com.williansmartins.model;
+package br.com.waiso.entity;
 
 import java.io.Serializable;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 
+@Entity(name="pessoa")
 public class PessoaEntity implements Serializable{
 
 	private static final long serialVersionUID = -3689382195454890010L;
 
+	@Id @GeneratedValue
 	private Integer id;
 	private String nome;
 	private Integer idade;
@@ -40,4 +45,7 @@ public class PessoaEntity implements Serializable{
 		this.sexo = sexo;
 	}
 	
+	public String toString() {
+        return String.format("id:%d,nome:%s,idade:%d,sexo:%s", id, nome, idade, sexo);
+    }
 }
