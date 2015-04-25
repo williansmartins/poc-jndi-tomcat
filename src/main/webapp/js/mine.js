@@ -11,5 +11,16 @@ $( document ).ready(function() {
 		});
 	});
 	
+	$("#botaoCarro").click(function(){
+		$.ajax({
+			method: "POST",
+			url: "CarroController",
+			data: { montadora: $("#montadora").val(), modelo: $("#modelo").val(),}
+		}).done(function( retorno ) {
+			debugger;
+			alert( "Mensagem: " + retorno.montadora );
+		});
+	});
+	
 	
 });
