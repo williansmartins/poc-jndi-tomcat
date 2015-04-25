@@ -1,11 +1,15 @@
 $( document ).ready(function() {
-	$.ajax({
-		method: "POST",
-		url: "Controller",
-		data: { name: "John", location: "Boston" }
-	}).done(function( msg ) {
-		debugger;
-	    alert( "Mensagem: " + msg );
+	
+	$("#botao").click(function(){
+		$.ajax({
+			method: "POST",
+			url: "Controller",
+			data: { nome: $("#nome").val(), idade: $("#idade").val(), sexo: $("input[name='sexo']").val() }
+		}).done(function( retorno ) {
+			debugger;
+			alert( "Mensagem: " + retorno.nome );
+		});
 	});
+	
 	
 });
