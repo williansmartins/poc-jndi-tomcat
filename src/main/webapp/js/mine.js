@@ -6,8 +6,9 @@ $( document ).ready(function() {
 			url: "Controller",
 			data: { nome: $("#nome").val(), idade: $("#idade").val(), sexo: $("input[name='sexo']").val() }
 		}).done(function( retorno ) {
-			debugger;
-			alert( "Mensagem: " + retorno.nome );
+			alert( "Mensagem: " + retorno );
+		}).error(function( retorno ) {
+			alert( "Erro: " + retorno );
 		});
 	});
 	
@@ -18,7 +19,8 @@ $( document ).ready(function() {
 			data: { nome: $("#nome").val(), endereco: $("#endereco").val(), numero: $("#numero").val(), 
 					sexo: $("input[name='curso']").val() }
 		}).done(function( retorno ) {
-			debugger;
+			alert( "Mensagem: " + retorno.nome );
+		}).error(function( retorno ) {
 			alert( "Mensagem: " + retorno.nome );
 		});
 	});
