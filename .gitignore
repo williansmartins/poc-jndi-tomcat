@@ -9,7 +9,8 @@
 *.ear
 
 
-/target
+target/ 
 
 .settings/
 .classpath
+MANIFEST.MF
