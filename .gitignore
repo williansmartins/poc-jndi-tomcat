@@ -8,6 +8,8 @@
 
 *.ear
 
-.project
 
-/target/
+/target
+
+.settings/
+.classpath
