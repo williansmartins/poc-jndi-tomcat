@@ -1,13 +1,11 @@
 *.class
-
-
-# Package Files 
 *.jar
-
 *.war
-
 *.ear
-
+target/
+*/target/*
+*/target/**
+.settings/
+.classpath
 .project
-
-/target/
+MANIFEST.MF
