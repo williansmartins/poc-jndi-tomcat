@@ -8,5 +8,13 @@ target/
 .settings/
 .classpath
 .project
-arquivo novo
-nao faca guerra, faca um pull 
+*.class
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
